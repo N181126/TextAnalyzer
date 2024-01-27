@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+            <div class="text-entry">
+                <h2>Text Analyzer</h2>
+                <p>Text Analzer is a simple freee online tool for SEO web content analysis that helps you find
+                    most frequent phrases and words,number of characters,words,sentences and paragraphs,and estimated read and speack time of your content
+                </p>
+                <div class="text-type-options">
+                    <span id="wordBtn" class="text-type-btn " onclick="toggleTextType('word')">Word</span>
+                    <span id="paragraphBtn" class="text-type-btn active" onclick="toggleTextType('paragraph')">Paragraph</span>
+                </div>
+                <textarea rows="7" id="textInput"  placeholder="Type,or copy/paste your content here"></textarea>
+                <button type="button" id="process-btn">PROCESS</button>
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Character Count:</td>
+                        <td>Word Count:</td>
+                        <td id="sentenceLabel">Sentences Count:</td>
+                        <td id="paragraphLabel">Paragraph Count:</td>
+                        <td id="spaceLabel">Space Count:</td>
+                        <td id="PunctuationsLabel">Punctuations Count:</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td><span id="char"></span></td>
+                        <td><span id="word"></span></td>
+                        <td id="sentence"><span></span></td>
+                        <td id="paragraph"><span></span></td>
+                        <td id="spaces"><span></span></td>
+                        <td id="punctuation"><span></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
